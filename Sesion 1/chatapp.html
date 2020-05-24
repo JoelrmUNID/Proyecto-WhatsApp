@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="css/stylechatapp.css">
+   <script src="script/script.js"></script>
+  
+    
+</head>
+ 
+<body>
+    <div class="header">
+        <div class="appname" onclick="duplicate()" >ChatApp</div> <!--  data-view="appname"  se quita el evento onclick y se suple por dataview -->
+        <div class="space"></div>
+        <div class="search"><img src="img/buscar.png" height="30px" width="30px" alt="Avatar"></div>
+        <div class="submenu"><img src="img/menu.png" height="30px" width="30px" alt="Avatar"></div>
+    </div>
+    <div class="menu">
+        <div class="camera"> <img src="img/camara.png" height="30px" width="30px" alt="Avatar"></div>
+        <div id="bottom-line" class="chats" data-view="chats">Chats</div>
+            <div id="bottom-line" class="estados" data-view="estados" >Estados</div> <!--  se quita el evento onclick y se suple por dataview -->
+           <div id="bottom-line" class="llamadas" data-view="llamadas">Llamadas</div>
+  </div>
+
+
+
+<div class="copy" >
+
+    <div class="row" >
+        <div class="icon" >
+            <img src="img/contacto.png" height="40px" width="80px" alt="Avatar">
+        </div>
+        <div class="content">
+            <div class="top-row">
+                <div class="chatname">Ciencias</div>
+                <div class="timedate">7:34 a.m.</div>
+            </div>
+            <div class="bottom-row">
+                <div class="contactname">Samuel: Buen día!</div>
+                <div class="status">1</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="copyestados" style="display:none">
+
+    <div class="rowestados"  >
+        <div class="icon" >
+            <img src="img/estado.png" height="30px" width="30px" alt="Avatar">
+        </div>
+        <div class="content">
+            <div class="top-row">
+                <div class="chatname">Estados</div>
+                <div class="timedate">Estados</div>
+            </div>
+            <div class="bottom-row">
+                <div class="contactname">Estados</div>
+                <div class="status">0</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div class="copyllamadas" style="display:none">
+
+    <div class="rowllamadas"  >
+        <div class="icon" >
+            <img src="img/llamada.png" height="30px" width="30px" alt="Avatar">
+        </div>
+        <div class="content">
+            <div class="top-row">
+                <div class="chatname">Llamadas</div>
+                <div class="timedate">Llamadas</div>
+            </div>
+            <div class="bottom-row">
+                <div class="contactname">Llamadas</div>
+                <div class="status">0</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
